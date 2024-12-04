@@ -1,0 +1,148 @@
+/* General styles */
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 105%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding-block: 1rem;
+  margin-inline: auto;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  position: sticky;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 25px;
+  display: inline;
+}
+
+a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+}
+
+nav li:hover a {
+  background-color: #52320d;
+  color: white;
+}
+
+nav a:hover::after {
+  transform: scaleX();
+}
+
+.image {
+  width: 100px;
+}
+
+.card3, .card1, .card2 {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / .2);
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+  padding: 20px;
+  background-color: tan;
+  text-align: justify;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: bisque;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .card3, .card1, .card2 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  li {
+    margin: 8px 0;
+  }
+
+  a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .card3, .card1, .card2 {
+    width: 100%;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 85%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
